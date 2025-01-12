@@ -14,7 +14,8 @@ abstract class Table {
     }
     throw Exception("Table $tableType is not registered");
   }
-  
+
+
 
   static void registerFactory(Type tableType, Table Function(Map<String, dynamic>) factory) {
     _factoryRegistry[tableType] = factory;
